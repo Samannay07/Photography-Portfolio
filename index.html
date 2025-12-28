@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Samannay | Photography Portfolio</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      body {
+        background-color: #f9fafb;
+        color: #111827;
+        transition: background-color 0.3s, color 0.3s;
+      }
+
+      #home {
+        background-color: #f9fafb;
+        color: #111827;
+      }
+
+      .dark body {
+        background-color: #111827;
+        color: #f9fafb;
+      }
+
+      .dark #home {
+        background-color: #111827;
+        color: #f9fafb;
+      }
+
+      .dark nav,
+      .dark section,
+      .dark footer {
+        background-color: #111827;
+      }
+    </style>
+    <style>
+      img {
+        display: block;
+        width: 100%;
+      }
+    </style>
+    <style>
+      #galleryGrid {
+        column-fill: balance;
+      }
+    </style>
+    <style>
+      /* Hero background image */
+      .bg-hero {
+        background-image: url("images/hero1.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        position: relative;
+      }
+
+      /* Overlay for readability */
+      .bg-hero::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: rgba(255, 255, 255, 0.5);
+        z-index: 0;
+      }
+
+      .dark .bg-hero::before {
+        background: rgba(0, 0, 0, 0.6);
+      }
+
+      /* Keep hero content above overlay */
+      .bg-hero > * {
+        position: relative;
+        z-index: 1;
+      }
+    </style>
+  </head>
+
+  <body class="bg-gray-50 text-gray-900 transition-colors duration-300">
+    <!-- Navbar -->
+    <nav
+      class="flex justify-between items-center px-8 py-4 shadow-md bg-white sticky top-0 z-50"
+    >
+     <div class="flex items-center gap-2">
+  <img src="images/10844877.png" alt="Logo" class="w-10 h-10">
+  <h1 class="text-xl font-bold">Samannay</h1>
+</div>
+
+      <div class="space-x-6">
+        <a href="#home" class="hover:text-blue-500">Home</a>
+        <a href="#gallery" class="hover:text-blue-500">Gallery</a>
+        <a href="#contact" class="hover:text-blue-500">Contact</a>
+        <button
+          id="toggleTheme"
+          class="px-3 py-1 rounded-md bg-gray-200 hover:bg-gray-300"
+        >
+          Dark Mode
+        </button>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section
+      id="home"
+      class="min-h-screen flex flex-col justify-center items-center text-center px-6 bg-hero"
+    >
+      <h2 class="text-5xl font-extrabold mb-4">
+        Capturing Stories Through Light
+      </h2>
+      <p class="text-lg max-w-xl">
+        A showcase of moments, emotions, and details that often go unnoticed.
+      </p>
+      <p>
+        Hey There! Thanks for stopping by. I am Samannay, a student photographer
+        from NIT Rourkela.
+      </p>
+    </section>
+
+    <!-- Showcase Grid -->
+    <section id="gallery" class="px-8 py-16 bg-gray-50">
+      <h3 class="text-3xl font-bold text-center mb-10">Gallery</h3>
+      <div class="text-center mb-6">
+        <button
+          id="toggleGallery"
+          class="px-4 py-2 rounded-md bg-blue-500 text-white hover:bg-blue-600 transition"
+        >
+          Hide Gallery
+        </button>
+      </div>
+
+      <div id="galleryGrid" class="columns-1 sm:columns-2 lg:columns-3 gap-6">
+        <!-- 27 Photo Grid -->
+
+        <img
+          src="images/landscape1.jpg"
+          class="mb-6 w-full rounded-xl shadow-lg hover:scale-105 transition break-inside-avoid"
+          alt="landscape photo" loading="lazy"
+        />
+        <img
+          src="images/landscape2.jpg"
+          class="mb-6 w-full rounded-xl shadow-lg hover:scale-105 transition break-inside-avoid"
+          alt="landscape photo" loading="lazy"
+        />
+        <img
+          src="images/landscape3.jpg"
+          class="mb-6 w-full rounded-xl shadow-lg hover:scale-105 transition break-inside-avoid"
+          alt="landscape photo" loading="lazy"
+        />
+        <img
+          src="images/landscape5.jpg"
+          class="mb-6 w-full rounded-xl shadow-lg hover:scale-105 transition break-inside-avoid"
+          alt="landscape photo" loading="lazy"
+        />
+        <img
+          src="images/landscape6.jpg"
+          class="mb-6 w-full rounded-xl shadow-lg hover:scale-105 transition break-inside-avoid"
+          alt="landscape photo" loading="lazy"
+        />
+        <img
+          src="images/landscape7.jpg"
+          class="mb-6 w-full rounded-xl shadow-lg hover:scale-105 transition break-inside-avoid"
+          alt="landscape photo" loading="lazy"
+        />
+        <img
+          src="images/landscape8.jpg"
+          class="mb-6 w-full rounded-xl shadow-lg hover:scale-105 transition break-inside-avoid"
+          alt="landscape photo" loading="lazy"
+        />
+        <img
+          src="images/landscape9.jpg"
+          class="mb-6 w-full rounded-xl shadow-lg hover:scale-105 transition break-inside-avoid"
+          alt="landscape photo" loading="lazy"
+        />
+        <img
+          src="images/landscape10.jpg"
+          class="mb-6 w-full rounded-xl shadow-lg hover:scale-105 transition break-inside-avoid"
+          alt="landscape photo" loading="lazy"
+        />
+
+        <img
+          src="images/landscape11.jpg"
+          class="mb-6 w-full rounded-xl shadow-lg hover:scale-105 transition break-inside-avoid"
+          alt="landscape photo" loading="lazy"
+        />
+        <img
+          src="images/landscape12.jpg"
+          class="mb-6 w-full rounded-xl shadow-lg hover:scale-105 transition break-inside-avoid"
+          alt="landscape photo" loading="lazy"
+        />
+        <img
+          src="images/landscape13.jpg"
+          class="mb-6 w-full rounded-xl shadow-lg hover:scale-105 transition break-inside-avoid"
+          alt="landscape photo" loading="lazy"
+        />
+        <img
+          src="images/ landscape14.jpg"
+          class="mb-6 w-full rounded-xl shadow-lg hover:scale-105 transition break-inside-avoid"
+          alt="landscape photo" loading="lazy"
+        />
+        <img
+          src="images/landscape15.jpg"
+          class="mb-6 w-full rounded-xl shadow-lg hover:scale-105 transition break-inside-avoid"
+          alt="landscape photo" loading="lazy"
+        />
+        <img
+          src="images/tablet1.jpg"
+          class="mb-6 w-full rounded-xl shadow-lg hover:scale-105 transition break-inside-avoid"
+          alt="Potrait Photo" loading="lazy"
+        />
+        <img
+          src="images/tablet2.jpg"
+          class="mb-6 w-full rounded-xl shadow-lg hover:scale-105 transition break-inside-avoid"
+          alt="Potrait Photo" loading="lazy"
+        />
+        <img
+          src="images/tablet3.jpg"
+          class="mb-6 w-full rounded-xl shadow-lg hover:scale-105 transition break-inside-avoid"
+          alt="Potrait Photo" loading="lazy"
+        />
+        <img
+          src="images/tablet4.jpg"
+          class="mb-6 w-full rounded-xl shadow-lg hover:scale-105 transition break-inside-avoid"
+          alt="Potrait Photo" loading="lazy"
+        />
+
+        <img
+          src="images/potrait1.jpg"
+          class="mb-6 w-full rounded-xl shadow-lg hover:scale-105 transition break-inside-avoid"
+          alt="Potrait Photo" loading="lazy"
+        />
+        <img
+          src="images/potrait2.jpg"
+          class="mb-6 w-full rounded-xl shadow-lg hover:scale-105 transition break-inside-avoid"
+          alt="Potrait Photo" loading="lazy"
+        />
+        <img
+          src="images/potrait3.jpg"
+          class="mb-6 w-full rounded-xl shadow-lg hover:scale-105 transition break-inside-avoid"
+          alt="Potrait Photo" loading="lazy"
+        />
+        <img
+          src="images/potrait4.jpg"
+          class="mb-6 w-full rounded-xl shadow-lg hover:scale-105 transition break-inside-avoid"
+          alt="Potrait Photo" loading="lazy"
+        />
+        <img
+          src="images/potrait5.jpg"
+          class="mb-6 w-full rounded-xl shadow-lg hover:scale-105 transition break-inside-avoid"
+          alt="Potrait Photo" loading="lazy"
+        />
+        <img
+          src="images/potrait6.jpg"
+          class="mb-6 w-full rounded-xl shadow-lg hover:scale-105 transition break-inside-avoid"
+          alt="Potrait Photo" loading="lazy"
+        />
+        <img
+          src="images/potrait7.jpg"
+          class="mb-6 w-full rounded-xl shadow-lg hover:scale-105 transition break-inside-avoid"
+          alt="Potrait Photo" loading="lazy"
+        />
+        <img
+          src="images/potrait8.jpg"
+          class="mb-6 w-full rounded-xl shadow-lg hover:scale-105 transition break-inside-avoid"
+          alt="Potrait Photo" loading="lazy"
+        />
+
+        <img
+          src="images/IMG_20251110_161038465.jpg"
+          class="mb-6 w-full rounded-xl shadow-lg hover:scale-105 transition break-inside-avoid"
+          alt="Potrait Photo" loading="lazy"
+        />
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="px-8 py-16 bg-gray-100 text-center">
+      <h3 class="text-3xl font-bold mb-4">Contact Us</h3>
+      <p>For any inquiries please reach us out through any of the following channels.</p>
+      <p>Email: clglifeofwiz.8935@gmail.com</p>
+      <p>Phone: +91 8617236338</p>
+    </section>
+
+    <!-- Footer -->
+   <footer class="text-center py-8 shadow-inner">
+  <div class="flex justify-center gap-6 mb-4">
+    
+    
+
+    
+    <a href="https://github.com/Samannay07" target="_blank" aria-label="GitHub" class="hover:scale-110 transition-transform duration-100
+">
+      <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+        <path d="M12 .5C5.7.5.5 5.8.5 12.2c0 5.1 3.3 9.4 7.9 10.9.6.1.8-.2.8-.6v-2.1c-3.2.7-3.9-1.6-3.9-1.6-.5-1.3-1.2-1.6-1.2-1.6-1-.7.1-.7.1-.7 1.1.1 1.7 1.1 1.7 1.1 1 .1.8-1.5.8-1.5-.8-.1-1.5-.5-2-.9-.3-.2-.6-.5-.9-.8-.2-.3-.4-.6-.5-1-.1-.3-.1-.7-.1-1 0-1.3.5-2.3 1.3-3.1-.1-.3-.5-1.4.1-2.9 0 0 1-.3 3.2 1.2.9-.3 1.9-.4 2.9-.4s2 .1 2.9.4c2.2-1.5 3.2-1.2 3.2-1.2.6 1.5.2 2.6.1 2.9.8.8 1.3 1.8 1.3 3.1 0 .3 0 .7-.1 1-.1.4-.3.7-.5 1-.3.3-.6.6-.9.8-.5.4-1.2.8-2 .9 0 0-.2 1.6.8 1.5 0 0 .6-1 1.7-1.1 0 0 1.1 0 .1.7 0 0-.7.3-1.2 1.6 0 0-.7 2.3-3.9 1.6v2.1c0 .4.2.7.8.6 4.6-1.5 7.9-5.8 7.9-10.9C23.5 5.8 18.3.5 12 .5z"/>
+      </svg>
+    </a>
+
+   
+    <a href="https://www.linkedin.com/in/samannay-mondal-476525399?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BO28TnYFtQ9WIzut4Jc6dQw%3D%3D" target="_blank" aria-label="LinkedIn" class="hover:scale-110 transition-transform duration-100
+">
+      <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+        <path d="M4.98 3.5A2.5 2.5 0 104.98 8.5a2.5 2.5 0 000-5zM3 9h4v12H3zM9 9h3.8v1.7h.1c.5-1 1.8-2 3.7-2 4 0 4.7 2.6 4.7 6v6.3h-4v-5.6c0-1.3 0-3-1.8-3s-2.1 1.4-2.1 2.9v5.7H9z"/>
+      </svg>
+    </a>
+
+  </div>
+
+  <p class="text-sm text-gray-500">&copy; 2025 Samannay. All rights reserved.</p>
+</footer>
+
+     
+
+    <script src="script.js"></script>
+  </body>
+</html>
